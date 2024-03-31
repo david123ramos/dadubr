@@ -1,0 +1,284 @@
+@import url('https://db.onlinewebfonts.com/c/cb8d4d30de89efdc96a98761ede26d3d?family=Mongolian+Baiti');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.main-text {
+    font-family: "Abril Fatface", serif;
+}
+
+
+
+:root {
+    --global-font: "Mongolian Baiti" !important;
+}
+
+.terracotta-theme {
+    --primary: #BF533B;
+    --flower: url("./assets/images/1flower.png");
+    --font-color: #FFF;
+}
+
+.green-theme {
+    --primary: #FFF;
+    --flower: url("./assets/images/gf2.png"), url("./assets/images/texture.png");
+    --font-color: #475959;
+}
+
+html, body {
+    height: 100% !important;
+    overflow-x: hidden;
+}
+
+
+#app {
+    background-color: var(--primary) !important;
+    background-image: var(--flower);
+    display: inline-table;
+    height: 100%;
+}
+
+
+.dadu-font {
+   font-family: var(--global-font);
+   color: var(--font-color) !important;
+}
+.dadu-font-terracotta {
+   font-family: var(--global-font);
+   color: var(--primary) !important;
+}
+
+
+.dadu-btn {
+    font-family: var(--global-font) !important;
+    width: 10rem;
+    background-color: white;
+    color: #741a04;
+    border: 1px solid #741a04;
+}
+
+.dadu-btn:hover {
+    background-color: #741a04 !important;
+    border: 1px solid #741a04;;
+}
+
+.dadu-btn-green {
+    font-family: var(--global-font) !important;
+    width: 10rem;
+    background-color: #475959;
+    color: #FFF;
+    border: 1px solid #475959;
+}
+
+.dadu-btn-green:hover {
+    background-color: #273030 !important;
+    border: 1px solid #273030;
+}
+
+
+#main {
+    background: url("./assets/images/back-g.png") ;
+    background-size: cover;
+}
+
+#invitation {
+    animation:  tilt-shaking 0.4s 4;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    border-radius: 20px;
+      
+}
+  
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+  
+.flip-container, .front, .back {
+    width: 320px;
+	height: 480px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    border: 10px solid #475959;
+}
+
+.front {
+    background: url("./assets/images/daduf.png");
+    z-index: 2;
+    background-size: cover;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background: url('./assets/images/daduv.png') 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+
+ul {
+    padding: 0;
+}
+
+ul > li {
+    color: #475959 !important;
+}
+
+h3 {
+    color: #475959 !important;
+}
+
+.card-color {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5px;
+    border-top: 3px solid #475959;
+    border-bottom: 3px solid #475959;
+    margin-left: -1rem
+}
+
+#colors-pallete :first-child {
+    border-left: 3px solid #475959;
+}
+#colors-pallete :last-child {
+    border-right: 3px solid #475959;
+}
+
+.and-text {
+    font-size: 10rem;
+    position: absolute;
+    left: 70%;
+    top: -5%;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+}
+
+.text-terracotta {
+    color: #622C20 !important;
+}
+.terracotta {
+    background-color: #A53223;
+}
+.terracotta-light {
+    background-color: #BF533B;
+}
+.green {
+    background-color: #475959;
+}
+.nude {
+    background-color: #CCB9A3;
+}
+.white {
+    background-color: #FFF;
+}
+
+.card-logo {
+    width: 40px;
+}
+.card-logo-main{
+    width: 60px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .card {
+      width: 15rem !important;
+    }
+    .card-color {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+    .and-text {
+        font-size: 4rem !important;
+        position: absolute;
+        left: 75%;
+        top: 8%;
+        transform: rotate(20deg);
+        -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+    }
+  }
+
+  
+@media only screen and (min-width: 425px) {
+    .and-text {
+        font-size: 7rem;
+        left: 72%;
+        top: 3%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .and-text {
+        font-size: 7rem;
+        left: 67%;
+        top: 3%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .and-text {
+        font-size: 10rem;
+        left: 65%;
+        top: -5%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .and-text {
+        left: 62%;
+        top: 5%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .and-text {
+        left: 57%;
+        top: 25%;
+    }
+
+}
