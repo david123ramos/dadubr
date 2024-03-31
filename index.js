@@ -5,7 +5,9 @@ document.documentElement.classList.add('terracotta-theme');
 const map = {
     1 : "Gena",
     2 : "Elizabeth e Wellington",
-    3 : "Giba e Yasmim"
+    3 : "Giba e Yasmim",
+    4 : "Ozea e Isa",
+    5 : "Geyson e Pri"
 };
 
 window.onload = function() {
