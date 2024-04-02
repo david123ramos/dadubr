@@ -16,7 +16,7 @@ const map = {
     11: "Val e Márcio [filhos]",
     12: "Peta",
     13: "Rogério e Daisy",
-    14: "Denise",
+    14: "Aldenice",
     15: "Pink group",
     16: "Ana Lícia",
     17: "Vini e Clécia",
@@ -52,9 +52,10 @@ const map = {
     48: "Tio Leo",
     49: "Adriana e Nildo",
     50: "Caio e Adnete",
-    53: "Aldeci e Maria",
+    53: "Tia Altamira e prima Gilvanice",
     54: "Bruninha",
-    55: "Victor e Tiago"
+    55: "Victor e Tiago",
+    56: "Natália e Lelê"
 };
 
 window.onload = function() {
