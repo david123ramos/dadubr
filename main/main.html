@@ -16,7 +16,7 @@
             <div class="col-12 mt-3 d-flex justify-content-center">
                 
                 <div id="invitation">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div id="flip-container" class="flip-container" ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                           <div class="front"> </div>
                           <div class="back"></div>
@@ -28,7 +28,11 @@
         </div>
 
         <div id="main" class="row">
-            <div class="col-12 d-flex justify-content-center mb-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center mb-2">
+                <button class="btn mt-2 btn-primary dadu-btn-green mr-3" onclick="document.querySelector('#flip-container').classList.toggle('hover')">Revelar data</button>
+                <a class="btn mt-2 btn-primary dadu-btn-green" target="_blank" href="https://www.finalfeliz.de/dadubr" >Lista de presentes</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center mb-2">
                 <button class="btn mt-2 btn-primary dadu-btn-green" onclick="sendToDresscode()">Dicas de vestimenta</button>
             </div>
         </div>

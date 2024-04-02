@@ -66,6 +66,13 @@ html, body {
     background-color: #475959;
     color: #FFF;
     border: 1px solid #475959;
+    margin: 10px;
+}
+
+.back-button {
+    color: white;
+    font-family: var(--global-font);
+    text-decoration: none;
 }
 
 .dadu-btn-green:hover {
