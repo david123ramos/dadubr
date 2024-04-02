@@ -51,7 +51,7 @@ const map = {
     47: "Agni e Thai",
     48: "Tio Leo",
     49: "Adriana e Nildo",
-    50: "Caio e Adnet",
+    50: "Caio e Adnete",
     53: "Aldeci e Maria",
     54: "Bruninha",
     55: "Victor e Tiago"
