@@ -58,40 +58,39 @@ const map = {
     56: "Natália e Lelê"
 };
 
-window.onload = function() {
 
 
-    const n1 = document.querySelector("#nm1");
-    const n2 = document.querySelector("#nm2");
-    const n3 = document.querySelector("#nm3");
-    const n4 = document.querySelector("#nm4");
+const n1 = document.querySelector("#nm1");
+const n2 = document.querySelector("#nm2");
+const n3 = document.querySelector("#nm3");
+const n4 = document.querySelector("#nm4");
 
-    const urlParams = new URLSearchParams(window.location.search);
-    let user = map[urlParams.get('u')];
-    if(!user) {
-        alert("Usuário não encontrado");
-        window.location.href = "https://www.google.com";
-        return;
-    }
-
-    if(user.includes(" e ")){
-       
-        if(user.includes("[filhos]")) {
-            user = user.replace("[filhos]", "");
-            n4.textContent = "e filhos";
-            n4.classList.remove("d-none");
-        }
-        
-        n2.textContent = "&";
-        n3.textContent = user.split(" e ")[1];
-        n1.textContent = user.split(" e ")[0];
-       
-
-    }else{
-        n1.innerHTML = user;
-    }
-
+const urlParams = new URLSearchParams(window.location.search);
+let user = map[urlParams.get('u')];
+if(!user) {
+    alert("Usuário não encontrado");
+    window.location.href = "https://www.google.com";
+    return;
 }
+
+if(user.includes(" e ")){
+    
+    if(user.includes("[filhos]")) {
+        user = user.replace("[filhos]", "");
+        n4.textContent = "e filhos";
+        n4.classList.remove("d-none");
+    }
+    
+    n2.textContent = "&";
+    n3.textContent = user.split(" e ")[1];
+    n1.textContent = user.split(" e ")[0];
+    
+
+}else{
+    n1.innerHTML = user;
+}
+
+
 
 
 function sendToMain(){
