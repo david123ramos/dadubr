@@ -49,7 +49,7 @@ const map = {
     45: "Clebeson e Rau",
     46: "Emelly e Filipe",
     47: "Agni e Thay",
-    48: "Tio Leo",
+    48: "Tio Leo e Renata",
     49: "Adriana e Nildo",
     50: "Caio e Adnete",
     53: "Tia Altamira e prima Zilvanice",
