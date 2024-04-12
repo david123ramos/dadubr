@@ -45,17 +45,20 @@ const map = {
     41: "Lau e Carlos",
     42: "Carlos Macena",
     43: "Tia Mônica, Igor e Sophia",
-    44: "Ítalo e Erlinho",
+    44: "Erlinho",
     45: "Clebeson e Rau",
     46: "Emelly e Filipe",
     47: "Agni e Thay",
     48: "Tio Leo",
     49: "Adriana e Nildo",
     50: "Caio e Adnete",
-    53: "Tia Altamira e prima Gilvanice",
+    53: "Tia Altamira e prima Zilvanice",
     54: "Bruninha",
     55: "Victor e Tiago",
-    56: "Natália e Lelê"
+    56: "Natália e Lelê",
+    57: "Ítalo e Denise",
+    58: "Daniels e Maria Quitéria",
+    59: "Aldeci e Maria",
 };
 
 
