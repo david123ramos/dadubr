@@ -58,7 +58,7 @@ const map = {
     56: "Natália e Lelê",
     57: "Ítalo e Denise",
     58: "Daniels e Maria Quitéria",
-    59: "Aldeci e Maria",
+    59: "Aline, Aldeci e Maria",
 };
 
 
